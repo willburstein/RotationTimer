@@ -1,12 +1,10 @@
-let queue = ["Claire", "Charlie", "Alex", "Adam", "Ben", "Caleb", "Jack", "Will", "Jarret"];
 let queueIndex = 0;
-let startTime = [30,0];
 let timeRemaining = (startTime[0] * 60 * 1000) + (startTime[1] * 1000);
 const writeable = document.getElementById("playing");
 const timer = document.getElementById("time");
 const audio = new Audio("alert.mp3");
-queue = prompt("Enter students (StudentA, StudentB, ...)", "Claire, Charlie, Alex, Adam, Ben, Caleb, Jack, Will, Jarret").split(", ");
-startTime = [prompt("Enter time interval per rotation in minutes", "30"), 0];
+const queue = prompt("Enter students (StudentA, StudentB, ...)", "Claire, Charlie, Alex, Adam, Ben, Caleb, Jack, Will, Jarret").split(", ");
+const startTime = [prompt("Enter time interval per rotation in minutes", "30"), 0];
 function setInner() {
   writeable.innerHTML = "Students " + (queue[queueIndex]) + ", " + (queue[queueIndex+1]) + ", and " + (queue[queueIndex+2]) + " are now playing";
 }
