@@ -6,7 +6,7 @@ const writeable = document.getElementById("playing");
 const timer = document.getElementById("time");
 const audio = new Audio("alert.mp3");
 queue = prompt("Enter students (StudentA, StudentB, ...)", "Claire, Charlie, Alex, Adam, Ben, Caleb, Jack, Will, Jarret").split(", ");
-startTime = [prompt("Enter time interval per rotation in minutes"), 0];
+startTime = [prompt("Enter time interval per rotation in minutes", "30"), 0];
 function setInner() {
   writeable.innerHTML = "Students " + (queue[queueIndex]) + ", " + (queue[queueIndex+1]) + ", and " + (queue[queueIndex+2]) + " are now playing";
 }
