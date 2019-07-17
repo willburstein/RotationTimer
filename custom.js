@@ -1,5 +1,5 @@
 let queueIndex = 0;
-let startTime = [Number(prompt("Enter time interval per rotation in minutes", 30)), 0];
+let startTime = [parseInt(prompt("Enter time interval per rotation in minutes", 30)), 0];
 let timeRemaining = (startTime[0] * 60 * 1000) + (startTime[1] * 1000);
 const writeable = document.getElementById("playing");
 const timer = document.getElementById("time");
