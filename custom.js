@@ -7,7 +7,7 @@ const timer = document.getElementById("time");
 const audio = new Audio("alert.mp3");
 queue = prompt("Enter students (StudentA, StudentB, ...)", "Claire, Charlie, Alex, Adam, Ben, Caleb, Jack, Will, Jarret").split(", ");
 function setInner() {
-  writeable.innerHTML = "Student " + (queue[queueIndex]) + ", " + (queue[queueIndex+1]) + ", " + (queue[queueIndex+2]) " are now playing";
+  writeable.innerHTML = "Students " + (queue[queueIndex]) + ", " + (queue[queueIndex+1]) + ", and" + (queue[queueIndex+2]) " are now playing";
 }
 
 document.getElementById("toggle").addEventListener("click", (e) => {
