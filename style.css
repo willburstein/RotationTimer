@@ -1,0 +1,31 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+}
+
+body {
+  display: flex;
+  margin-top: 25vh;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+#toggle {
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 700;
+  display: inline-flex;
+  background: #AB47BC;
+  border-radius: 3px;
+  padding: 12px 14px;
+}
+
+#time {
+  margin-top: 10px;
+}
